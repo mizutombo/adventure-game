@@ -1,9 +1,18 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-// import App from './App'; // in _forReference folder
-// import './index.css';  // in _forReference folder
+
+import './index.css'; 
+
+import PdxTourApp from './PdxTourApp';
+import BrewPub from './BrewPub';
+import CouncilCrest from './CouncilCrest';
+
+let app = <PdxTourApp/>;
 
 ReactDOM.render(
-  <h1>Hello world</h1>,
+  <div>
+    <h1>PDX React Tour</h1>
+    {app}
+  </div>,
   document.getElementById('root')
 );
