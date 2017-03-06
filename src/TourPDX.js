@@ -1,3 +1,5 @@
+import React from 'react';
+
 const home = {
   site: 'PDX Tour Home Page',
   message: 'Welcome to Portland. Take a tour!',
@@ -35,7 +37,7 @@ const park = {
 
 const venueOptions = [home, books, brews, park];
 
-function tourPDX(props) {
+function TourPDX(props) {
   const venueChoice = venueOptions.filter(venue => {
     if (props === venue.id) {
       return venue;
@@ -44,4 +46,4 @@ function tourPDX(props) {
   return venueChoice[0];
 }
 
-module.exports = tourPDX;
+export default TourPDX;

@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-import tourPDX from './venue.js';
+import TourPDX from './TourPDX.js';
 
 import BrewPub from './BrewPub';
 import CouncilCrest from './CouncilCrest';
