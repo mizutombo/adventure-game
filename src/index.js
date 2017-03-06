@@ -5,11 +5,28 @@ import ReactDOM from 'react-dom';
 
 //turning header into component
 function Pioneer(props) {
+  function handleClick(e) {
+    e.preventDefault();
+
+    ReactDOM.render(
+      <Zoo />,
+      document.getElementById('root')
+    )
+  }
+
   return (
     <div>
       <h1>Welcome to Pioneer Square!</h1>
-      <button>Click me</button>
+      <button onClick={handleClick}>Next Scene</button>
   </div>
+  )
+}
+
+function Zoo(props) {
+  return (
+    <div>
+      <h1>You are at the Zoo</h1>
+    </div>
   )
 }
 
