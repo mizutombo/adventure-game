@@ -1,11 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
+import tourPDX from './venue.js';
+import PdxTourApp from '.PdxTourApp.js';
+
 import './index.css'; 
 
-import PdxTourApp from './PdxTourApp';
-import BrewPub from './BrewPub';
-import CouncilCrest from './CouncilCrest';
+
 
 let app = <PdxTourApp/>;
 
