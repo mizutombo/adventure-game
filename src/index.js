@@ -16,13 +16,14 @@ function Pioneer(props) {
 
   function getDrink(e) {
     e.preventDefault();
-    alert('You had a martini with your friend and caught up on the most recent gossip. You caught the next max to the Zoo and are a few minutes behind schedule')
+    alert('You had a latte with your friend and got up with the most recent gossip. Your friend drives you to the Zoo just in time for your daughter\'s party! \n (Close out of this and click Go to Zoo button)');
   }
 
   return (
     <div>
       <h1>Welcome to Pioneer Square!</h1>
-      <p>You ran into an old friend while running to catch the max to go to the zoo. Run for the max or have a drink with your friend and catch the next one?</p>
+      <img role='presentation' src='pioneer-square.jpg'/>
+      <p>Your daughter's birthday party is at the zoo and you are running late. You're car broke down and you are at Pioneer Square. You run into an old buddy from High School who offers to buy you coffee. Do you risk missing the max to catch up with an old friend?</p>
       <button onClick={goToTheZoo}>Go to the Zoo</button>
       <button onClick={getDrink}>Have a drink</button>
   </div>
