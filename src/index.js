@@ -1,10 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import PioneerScene from './pioneer';
 // import App from './App'; // in _forReference folder
 // import './index.css';  // in _forReference folder
-
+ReactDOM.render(
+  <PioneerScene />,
+  document.getElementById('root')
+);
 //turning header into component
-function Pioneer(props) {
+/*function Pioneer(props) {
   function goToTheZoo(e) {
     e.preventDefault();
 
@@ -28,7 +32,7 @@ function Pioneer(props) {
       <button onClick={getDrink}>Have a drink</button>
   </div>
   )
-}
+}*/
 
 function Zoo(props) {
   function goToCouncilCrest(e) {
@@ -64,8 +68,3 @@ function CouncilCrest (props) {
     </div>
   )
 }
-
-ReactDOM.render(
-  <Pioneer />,
-  document.getElementById('root')
-);
