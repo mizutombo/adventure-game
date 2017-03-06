@@ -6,7 +6,10 @@ import ReactDOM from 'react-dom';
 //turning header into component
 function Pioneer(props) {
   return (
-    <h1>Welcome to Pioneer Square!</h1>
+    <div>
+      <h1>Welcome to Pioneer Square!</h1>
+      <button>Click me</button>
+  </div>
   )
 }
 
