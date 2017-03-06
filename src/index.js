@@ -31,7 +31,7 @@ function Pioneer(props) {
 }
 
 function Zoo(props) {
-  function handleClick(e) {
+  function goToCouncilCrest(e) {
     e.preventDefault();
 
     ReactDOM.render(
@@ -39,13 +39,21 @@ function Zoo(props) {
       document.getElementById('root')
     )}
 
-    return (
-      <div>
-        <h1>You are at the Zoo</h1>
-        <button onClick={handleClick}>Next Scene</button>
-      </div>
-    )
+  function doWork(e) {
+    e.preventDefault();
+    alert('You told your daughter you had to leave early to get prepared for your big meeting and she ignores you for the rest of the day. At least you got your work done for tomorrow');
   }
+
+  return (
+    <div>
+      <h1>You are at the Zoo</h1>
+      <img role='presentation' src='Unknown.jpeg' />
+      <p>You are at the Zoo celebrating your daughter's birthday when you get a call from your boss. You forgot that big meeting with all of the executives is tomorrow morning! But you're daughter wants to go to Council Crest and watch the sunset to end her birthday celebration. What do you do?</p>
+      <button onClick={goToCouncilCrest}>Go to Council Crest</button>
+      <button onClick={doWork}>Finish Work</button>
+    </div>
+  )
+}
 
 function CouncilCrest (props) {
   return (
