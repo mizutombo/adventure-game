@@ -13,10 +13,10 @@ export default class PioneerScene extends Component {
   goToTheZoo(e) {
     e.preventDefault();
 
-    ReactDOM.render(
-            <Zoo />,
-        document.getElementById('root')
-    )
+    // ReactDOM.render(
+    //         <Zoo />,
+    //     document.getElementById('root')
+    // )
   }        
   render() {
     return (
