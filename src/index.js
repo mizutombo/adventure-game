@@ -41,13 +41,13 @@ function Zoo(props) {
 
   function doWork(e) {
     e.preventDefault();
-    alert('You told your daughter you had to leave early to get prepared for your big meeting and she ignores you for the rest of the day. At least you got your work done for tomorrow');
+    alert('You told your daughter you had to leave early to get prepared for your big meeting and she stops talking to you. You end up watching the sunset by yourself and go to bed early to get some rest.');
   }
 
   return (
     <div>
       <h1>You are at the Zoo</h1>
-      <img role='presentation' src='Unknown.jpeg' />
+      <img role='presentation' src='zoo.jpeg' />
       <p>You are at the Zoo celebrating your daughter's birthday when you get a call from your boss. You forgot that big meeting with all of the executives is tomorrow morning! But you're daughter wants to go to Council Crest and watch the sunset to end her birthday celebration. What do you do?</p>
       <button onClick={goToCouncilCrest}>Go to Council Crest</button>
       <button onClick={doWork}>Finish Work</button>
@@ -59,6 +59,8 @@ function CouncilCrest (props) {
   return (
     <div>
       <h1>You are at Council Crest</h1>
+      <img role='presentation' src='council-crest.jpg' />
+      <p>What an exciting day you had. Your car is ready to pick up from the mechanics in time for work tomorrow and everything works out okay.</p>
     </div>
   )
 }
