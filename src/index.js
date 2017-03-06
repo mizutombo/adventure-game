@@ -23,9 +23,26 @@ function Pioneer(props) {
 }
 
 function Zoo(props) {
+  function handleClick(e) {
+    e.preventDefault();
+
+    ReactDOM.render(
+      <CouncilCrest />,
+      document.getElementById('root')
+    )}
+
+    return (
+      <div>
+        <h1>You are at the Zoo</h1>
+        <button onClick={handleClick}>Next Scene</button>
+      </div>
+    )
+  }
+
+function CouncilCrest (props) {
   return (
     <div>
-      <h1>You are at the Zoo</h1>
+      <h1>You are at Council Crest</h1>
     </div>
   )
 }
